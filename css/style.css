@@ -1,12 +1,30 @@
 body {
   background-color: rosybrown;
 }
-div {
+.test {
+  border: 1px solid #000;
+  margin: 2px;
+  padding: 2px;
+}
+#left-sidebar {
+  width: 30%;
+  float: left;
+}
+
+#content {
+  padding-left: 30%;
+}
+#content div {
+  border-color: red;
+}
+.page-block {
   color: white;
   background-color: gray;
   padding: 10px;
   margin: 10px;
   border: 0.1px solid;
+  box-shadow: 0 0 0 1px black;
+  border-radius: 2px;
 }
 table {
   background-color: rosybrown;
@@ -53,4 +71,7 @@ h2 {
 }
 label {
   color: white;
+}
+#picture {
+  border-radius: 50%;
 }
