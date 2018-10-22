@@ -75,3 +75,7 @@ label {
 #picture {
   border-radius: 50%;
 }
+
+#footer {
+  clear: both;
+}
