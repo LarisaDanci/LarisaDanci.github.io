@@ -1,11 +1,11 @@
 body {
-  background-color: rosybrown;
+  background-color: #928a97;
 }
-.test {
+/* .test {
   border: 1px solid #000;
   margin: 2px;
   padding: 2px;
-}
+} */
 #left-sidebar {
   width: 30%;
   float: left;
@@ -23,11 +23,11 @@ body {
   padding: 10px;
   margin: 10px;
   border: 0.1px solid;
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px #334455;
   border-radius: 2px;
 }
 table {
-  background-color: rosybrown;
+  background-color: rgba(148, 150, 143, 0.692);
   border-color: white;
   -webkit-text-fill-color: white;
 }
