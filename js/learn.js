@@ -1,27 +1,28 @@
-console.info(0);
+function learnVariables() {
+  console.info(0);
 
-function sayWelcome() {
-  console.info("Salut " + prenume + " , bine ai venit la noi!");
+  function sayWelcome() {
+    console.info("Salut " + prenume + " , bine ai venit la noi!");
+  }
+
+  var nume = "Danci";
+  var prenume = "Larisa";
+  var owner = "Larisa's";
+  var msg1 = 'ai zis "Lari"?';
+  var msg2 = 'Nu, am zis "Larisa"';
+  var remplate = "Glilimele simple";
+
+  console.debug("auzi...? dar cum te cheama? -" + prenume);
+  sayWelcome();
+  var skills = ["html", "css", "js"];
+
+  prenume = "Lari";
+  console.info("toate variabilele au fost initializate");
+  console.log(nume);
+  console.debug("cum te cheama? -" + prenume);
+
+  sayWelcome();
 }
-
-var nume = "Danci";
-var prenume = "Larisa";
-var owner = "Larisa's";
-var msg1 = 'ai zis "Lari"?';
-var msg2 = 'Nu, am zis "Larisa"';
-var remplate = "Glilimele simple";
-
-console.debug("auzi...? dar cum te cheama? -" + prenume);
-sayWelcome();
-var skills = ["html", "css", "js"];
-
-prenume = "Lari";
-console.info("toate variabilele au fost initializate");
-console.log(nume);
-console.debug("cum te cheama? -" + prenume);
-
-sayWelcome();
-
 // schimb valutar
 var cursEUR = 4.5;
 var myEUR = 20;
