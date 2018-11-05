@@ -49,10 +49,15 @@ function getExtractFee(ammount) {
   return comision;
 }
 
-function extractFromATM(ammount) {
-  console.info("suma extrasa este: " + ammount);
-  var comision = getExtractFee(ammount);
-  var totalExtract = ammount + comision;
+// TODO implement
+function checkExtractPermissions() {
+  return true;
+}
+
+function extractFromATM(amount) {
+  console.info("suma extrasa este: " + amount);
+  var comision = getExtractFee(amount);
+  var totalExtract = amount + comision;
 
   if (totalExtract > funds) {
     console.error("insufficient funds");
@@ -63,6 +68,8 @@ function extractFromATM(ammount) {
   }
 
   funds = funds - totalExtract;
+  //ATMFunds = ATMFunds - ammount;
+  ATMFunds -= amount;
 
   console.info("comision aplicat: " + comision);
   console.info("sold curent: " + funds);
@@ -74,6 +81,7 @@ extractFromATM(100000); //solduri insuficiente
 extractFromATM(3000);
 extractFromATM(3000);
 extractFromATM(100);
+extractFromATM(0);
 
 var plataTotala = 97;
 var sumaPrimita = 1000;
