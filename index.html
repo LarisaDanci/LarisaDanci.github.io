@@ -5,77 +5,86 @@
 <head>
 	<title>Larisa CV</title>
 	<meta charset="UTF-8" />
-	<link href="css/style.css" rel="stylesheet" type="text.css" </head>
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-	<body>
-		<div id="header">
-			<h1 style="text-align:center">CV</h1>
+<body>
+	<div id="header">
+		<h1 style="text-align:center">CV</h1>
 
-			<p style="text-align:right">Larisa Danci</p>
-			<img id="picture" src="https://instagram.fomr1-1.fna.fbcdn.net/vp/128eb2a703db499bbc1a57fbaaae79b3/5C49C404/t51.2885-19/s150x150/29716214_1993090247620744_8723666529134051328_n.jpg">
-			<br>
-			<ul id="top-menu-bar">
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">contact</a>
-				</li>
-				<li>
-					<a href="#">languages</a>
-				</li>
-				<li>
-					<a href="#">skills</a>
-				</li>
-			</ul>
+		<p style="text-align:right">Larisa Danci</p>
+		<img id="picture" src="https://instagram.fomr1-1.fna.fbcdn.net/vp/128eb2a703db499bbc1a57fbaaae79b3/5C49C404/t51.2885-19/s150x150/29716214_1993090247620744_8723666529134051328_n.jpg">
+		<br>
+		<ul id="top-menu-bar">
+			<li>
+				<a href="#" id="home-menu">Home</a>
+			</li>
+
+			<li>
+				<a href="#" id="languages-menu">languages</a>
+			</li>
+			<li>
+				<a href="#" id="skills-menu">skills</a>
+			</li>
+		</ul>
 	</div>
 	<div id="content-wrap">
 
-			<div  id="left-sidebar">
-			
-				<div  id="contact">
-					<h2>Contact</h2>
-					<p>Hire me!</p>
-					<label>Your email</label>
-					<input name="recruterEmail" type="email">
-					<button>send</button>
-				</div>
-				
+		<div id="left-sidebar">
+
+			<div id="contact">
+				<h2>Contact</h2>
+				<p>Hire me!</p>
+				<label>Your email</label>
+				<input name="recruterEmail" type="email">
+				<button>send</button>
 			</div>
-			<div  id="content">
-				<div >
 
-					<div class="page-block">
-						<h2>Skills:</h2>
-						<ul>
-							<li> HTML</li>
-							<li> CSS</li>
-							<li> JS</li>
-						</ul>
-					</div>
-					<div class="page-block">
-						<h2>Languages</h2>
-						<table border="1">
-							<tr>
-								<td>Romanian</td>
-								<td>Native</td>
-							</tr>
-							<tr>
-								<td>English</td>
-								<td>Good</td>
-							</tr>
-							<tr>
-								<td>Italian</td>
-								<td>Good</td>
-							</tr>
-						</table>
-					</div>
+		</div>
+		<div id="content">
+			<div>
 
+				<div class="test">
+					<div class="page-block" id="home-page">
+						<h2>Welcome</h2>
+						<p>About me...</p>
+					</div>
 				</div>
+
+				<div class="page-block" id="skills-page" style="display: none;">
+					<h2>Skills:</h2>
+					<ul>
+						<li> HTML</li>
+						<li> CSS</li>
+						<li> JS</li>
+					</ul>
+				</div>
+
+				<div class="page-block" id="languages-page" style="display: none;">
+					<h2>Languages</h2>
+					<table border="1">
+						<tr>
+							<td>Romanian</td>
+							<td>Native</td>
+						</tr>
+						<tr>
+							<td>English</td>
+							<td>Good</td>
+						</tr>
+						<tr>
+							<td>Italian</td>
+							<td>Good</td>
+						</tr>
+					</table>
+				</div>
+
+
 			</div>
 		</div>
+	</div>
 
-		<div id="app"></div>
-					<script src="js/learn.js"></script>
+	<div id="app"></div>
+	<!-- <script src="js/learn.js"></script> -->
+	<script src="src/index.js"></script>
 
-	</body>
+</body>
